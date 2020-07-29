@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const { DB } = require('./mysqlKeys')
 const { promisify } = require('util'); //sopota promesas
-const mysqlConnection = mysql.createPool(DB);
+const mysqlConnection = mysql.createConnection(DB);
 
-/*mysqlConnection.connect((error) => {
+mysqlConnection.connect((error) => {
     if (error) {
         if (error.code === 'PROTOCOL_CONNECTION_LOST') {
             console.error("Database connection closed");
@@ -19,7 +19,8 @@ const mysqlConnection = mysql.createPool(DB);
         return;
     }
 })
-*/
+
 mysqlConnection.query = promisify(mysqlConnection.query); //los query's automaticamente soportan promesas
+
 
 module.exports = mysqlConnection

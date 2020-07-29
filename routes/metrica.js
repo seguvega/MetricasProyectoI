@@ -23,6 +23,7 @@ router.post('/', async(req, res) => {
     const sql = "insert into resultados (nombre,resultado) values (?,?)";
     await DB.query(sql, [req.body.nombre, sus], (error, rows, fields) => {
         if (!error) {
+            DB.destroy();
             res.render('metricaSUS', {
                 pagina: 'SUS',
                 resultado: sus,
@@ -42,6 +43,7 @@ router.get('/consulta', async(req, res) => {
                 pagina: 'Resultados',
                 datos: row
             });
+            DB.destroy();
         } else {
             res.send(error)
         }
