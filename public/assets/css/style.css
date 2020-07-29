@@ -1,0 +1,42 @@
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+#barra {
+    background-color: #4C9DC2;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#espaciado_pag {
+    padding: 50px;
+}
+
+#espaciado_boton {
+    padding: 30px;
+}
+
+#radio {
+    height: 50px;
+}
+
+li {
+    font-weight: bold;
+}
+
+td {
+    width: 100px;
+}
+
+th {
+    text-align: center;
+    background-color: #ABA8A7;
+    color: white;
+}

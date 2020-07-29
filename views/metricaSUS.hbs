@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pagina}}|Almacenes JR</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="barra">
+        <h1>System Usability Scale (SUS)</h1>
+    </div>
+    <div id="espaciado_boton"></div>
+    <div class="container">
+        <div class="main row">
+            <div class="col-md-6">
+
+                <form action="/metrica" method="POST">
+                    Ingrese su nombre:
+                    <input type="input" class="form-control" id="nombre" name="nombre" required>
+                    <hr>
+
+                    <ol>
+                        <li>Creo que me gustará visitar con frecuencia este website</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg1" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg1" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg1" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg1" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg1" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Encontré el website innecesariamente complejo</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg2" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg2" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg2" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg2" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg2" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Pensé que era fácil utilizar el website</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg3" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg3" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg3" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg3" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg3" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Creo que necesitaría del apoyo de un experto para recorrer el website</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg4" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg4" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg4" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg4" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg4" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Encontré las diversas posibilidades del website bastante bien integradas</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg5" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg5" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg5" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg5" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg5" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Pensé que había demasiada inconsistencia en el website</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg6" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg6" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg6" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg6" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg6" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Imagino que la mayoría de las personas aprenderían muy rápidamente a utilizar el website
+                        </li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg7" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg7" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg7" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg7" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg7" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Encontré el website muy grande al recorrerlo</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg8" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg8" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg8" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg8" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg8" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li> Me sentí muy confiado en el manejo del website</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg9" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg9" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg9" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg9" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg9" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+
+                        <li>Necesito aprender muchas cosas antes de manejarme en el website</li>
+                        En completo desacuerdo ---> Completamente de acuerdo<br>
+                        <table>
+                            <tr>
+                                <td><label class="radio-inline"><input type="radio" name="preg10" value="1"
+                                            required>1</label></td>
+                                <td> <label class="radio-inline"><input type="radio" name="preg10" value="2">2</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg10" value="3">3</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg10" value="4">4</label>
+                                </td>
+                                <td><label class="radio-inline"><input type="radio" name="preg10" value="5">5</label>
+                                </td>
+                            </tr>
+                        </table><br>
+                    </ol>
+                    <center><button type="submit" class="btn btn-primary">Generar % usabilidad</button></center>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div style="float: right;">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_tarjeta"><i
+                            class="fas fa-info-circle"></i></button><br>
+                </div>
+
+                <div class="modal fade" id="modal_tarjeta">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color: #E4CF1A; color:black">
+                                <i class="fas fa-info-circle" style="color:black"></i> ¿Cómo se calcula?
+                                <button type="button" data-dismiss="modal" class="close">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Para los puntos 1, 3, 5, 7 y 9, la contribución será la posición de la escala menos 1.
+                                <br>
+                                Para los puntos 2, 4, 6, 8 y 10,la contribución será 5 menos la posición en la
+                                escala.<br>
+                                Se multiplica la suma de los resultados por 2.5 para obtener el valor global del SUS.
+                                <br>
+                                El resultado estará entre 0 y 100.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <b>Resultado: </b>
+                    <br><br><br>
+                    <center>
+                        <h1 style="color: blue; font-weight: bold;">{{resultado}}</h1>
+                    </center>
+                </center>
+                
+                <br>
+                <label style="font-size: x-large;">{{nombre}}</label>
+                <a href="http://www.sidar.org/recur/desdi/traduc/es/visitable/nuevos/CuestCon.htm"><b> Ver
+                        referencia</b></a>
+                <br>
+                <a href="/consulta"> 
+                <b> Ver resultados</b></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="espaciado_pag"></div>
+    <footer>
+        Desarrollado por: <br>
+        Karla Moyón - Sebastián Velasco - Carolina Chango<br>
+        {{getAnio}}
+    </footer>
+    {{!-- SCRIPTS --}}
+    {{!-- Buutstrap scripts --}}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
